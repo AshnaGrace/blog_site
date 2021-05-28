@@ -1,0 +1,14 @@
+<html>
+<div class="card ">
+    <div class="card-header">
+        <h5 class="card-title">Blog update</h5>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-success">update</button>
+        </form>
+    </div>
+</div>
+</html>
